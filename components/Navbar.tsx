@@ -21,14 +21,14 @@ export default async function Navbar() {
           <div className="flex items-center space-x-4">
             <Link
               href="/"
-              className="text-gray-200 hover:text-purple-600 px-2 py-1 rounded-md text-sm sm:px-3 sm:py-2 sm:text-base font-medium hidden sm:block"
+              className="text-gray-700 hover:text-purple-600 px-2 py-1 rounded-md text-sm sm:px-3 sm:py-2 sm:text-base font-medium hidden sm:block"
             >
               Home
             </Link>
 
             <Link
               href="/about"
-              className="text-gray-200 hover:text-purple-600 px-2 py-1 rounded-md text-sm sm:px-3 sm:py-2 sm:text-base font-medium "
+              className="text-gray-700 hover:text-purple-600 px-2 py-1 rounded-md text-sm sm:px-3 sm:py-2 sm:text-base font-medium "
             >
               About
             </Link>
