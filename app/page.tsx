@@ -6,6 +6,7 @@ import RecordChart from "@/components/RecordChart";
 import AverageSleep from "@/components/AverageSleep";
 import BestWorstSleep from "@/components/BestWorstSleep";
 import RecordHistory from "@/components/RecordHistory";
+import Image from "next/image";
 
 export default async function HomePage() {
   const user = await currentUser();
@@ -21,12 +22,13 @@ export default async function HomePage() {
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md flex flex-col sm:flex-row items-center sm:items-start gap-6">
             {/* User Image */}
-            <img
+            <Image
+              width={96}
+              height={96}
               src={user.imageUrl}
               alt={`${user.firstName}&#39;s profile`}
               className="w-24 h-24 rounded-full border border-gray-300 shadow-md"
             />
-
             {/* User Details */}
             <div className="flex-1">
               <h2 className="text-2xl md:text-3xl font-bold text-purple-600 mb-2">
