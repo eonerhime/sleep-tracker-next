@@ -1,10 +1,10 @@
 import getRecords from "@/app/actions/getRecords";
 import BarChart from "./BarChart";
-import { Record } from "@/types/Record";
+// import { Record } from "@/types/Record";
 
-interface BarChartProps {
-  records: Record[];
-}
+// interface BarChartProps {
+//   records: Record[];
+// }
 
 const RecordChart = async () => {
   const { records, error } = await getRecords();
