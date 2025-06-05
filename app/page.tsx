@@ -5,6 +5,7 @@ import AddNewRecord from "@/components/AddNewRecord";
 import RecordChart from "@/components/RecordChart";
 import AverageSleep from "@/components/AverageSleep";
 import BestWorstSleep from "@/components/BestWorstSleep";
+import RecordHistory from "@/components/RecordHistory";
 
 export default async function HomePage() {
   const user = await currentUser();
@@ -65,7 +66,9 @@ export default async function HomePage() {
         </div>
       </div>
       {/* Placeholder for SleepHistory */}
-      <div className="max-w-7xl mx-auto">{/* <RecordHistory /> */}</div>
+      <div className="max-w-7xl mx-auto">
+        <RecordHistory />
+      </div>
     </main>
   );
 }
